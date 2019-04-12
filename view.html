@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class = "senceUI",style="height: 100%">
+	<head>
+	<meta charset = "UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+	<meta name="renderer" content="webkit">
+	<title>senceEPC</title>
+	<link rel="stylesheet" type="text/css" href="./bootstrap.css">
+	<link rel="stylesheet" href="./index.css">
+		<script src="./jquery.min.js"></script>
+	<script src="./echarts.min.js"></script>
+	<script src="./index.js"></script>
+	<script src="./shandong.js"></script>
+	</head>
+
+	
+<body data-gr-c-s-loaded="true" style="height: 100%; margin: 0">
+
+<!--头部-->
+<div class="header">
+    EPC Sence Information
+    <a href="javascript:;" class="a-access">
+        <button class="button type1">
+    		刷新
+    	</button>
+    </a>
+</div>
+<!--主体-->
+
+<div class="main clearfix">
+    <div class="main-left">
+	
+        <div class="border-container">
+            <div class="name-title">
+                ===
+            </div>
+            <div id="radar" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;">
+				<div style="position: relative; overflow: hidden; width: 366px; height: 275px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+					<canvas data-zr-dom-id="zr_0" width="100" height="343" style="position: absolute; left: 0px; top: 0px; width: 366px; height: 275px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;">
+					</canvas>
+				</div>
+					<div></div>
+			</div>
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>
+		
+		
+        <div class="border-container">
+
+            <div class="name-title">
+               ===
+            </div>
+            <div id="graduateyear" _echarts_instance_="ec_1554971478854" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;">
+				<div style="position: relative; overflow: hidden; width: 366px; height: 192px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+					<canvas data-zr-dom-id="zr_0" width="457" height="240" style="position: absolute; left: 0px; top: 0px; width: 366px; height: 192px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;">
+					</canvas>
+				</div>
+				
+				<div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px/21px &quot;Microsoft YaHei&quot;; padding: 5px; left: 147px; top: 31px; pointer-events: none;">
+					2027年<br>
+					<span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#72b332;">
+					</span>
+					test1: 1,256<br>
+					<span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#35a9e0;">
+					</span>
+					test2: 900
+				</div>
+			</div>
+
+			
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>	
+  
+    </div>
+	
+	
+	
+    <div class="main-middle">
+		<!--地图-->
+        <div class="border-container">
+            <div id="mapadd" _echarts_instance_="ec_1554971478862" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;">
+				<div style="position: relative; overflow: hidden; width: 600px; height: 304px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+					<canvas data-zr-dom-id="zr_0" width="750" height="380" style="position: absolute; left: 0px; top: 0px; width: 600px; height: 304px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;">
+					</canvas>
+				</div>
+				<div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px/21px &quot;Microsoft YaHei&quot;; padding: 5px; left: 267px; top: 190px; pointer-events: none;">
+				枣庄市
+				</div>
+			</div>
+            
+			<div class="number-show">
+                <ul>
+                    <li>
+                        <span class="span-name">第一标准</span>
+                    </li>
+                    <li>
+                        <span class="span-number-show">653</span>
+                    </li>
+                    <li>
+                        <span class="span-name">第二标准</span>
+                    </li>
+                    <li>
+                        <span class="span-number-show">836252</span>
+                    </li>
+                    <li>
+                        <span class="span-name">第三标准</span>
+                    </li>
+                    <li>
+                        <span class="span-number-show">32162</span>
+                    </li>
+                </ul>
+            </div>
+			
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>
+		
+        <div class="border-container">
+            <ul class="teacher-pie clearfix">
+                <li>
+                    <div class="name-title">
+                        =======
+                    </div>
+                    <div id="courserate" _echarts_instance_="ec_1554971478857" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;">
+						<div style="position: relative; overflow: hidden; width: 309px; height: 200px; padding: 0px; margin: 0px; border-width: 0px; cursor: pointer;">
+							<canvas data-zr-dom-id="zr_0" width="386" height="250" style="position: absolute; left: 0px; top: 0px; width: 309px; height: 200px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;">
+							</canvas>
+						</div>
+							<div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px/21px &quot;Microsoft YaHei&quot;; padding: 5px; left: 158px; top: 103px; pointer-events: none;">
+								FK <br>test1 : 335 (22.6%)
+							</div>
+					</div>
+                </li>
+				
+                <li>
+                    <div class="name-title">
+                       =======
+                    </div>
+                    <div id="professionrate" _echarts_instance_="ec_1554971478858" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;">
+						<div style="position: relative; overflow: hidden; width: 310px; height: 200px; padding: 0px; margin: 0px; border-width: 0px; cursor: pointer;">
+							<canvas data-zr-dom-id="zr_0" width="387" height="250" style="position: absolute; left: 0px; top: 0px; width: 310px; height: 200px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;">
+							</canvas>
+						</div>
+							<div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px/21px &quot;Microsoft YaHei&quot;; padding: 5px; left: 81px; top: 111px; pointer-events: none;">
+								FK <br>test3 : 234 (26.62%)
+							</div>
+					</div>
+                </li>
+            </ul>
+			
+			
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+			
+        </div>
+		
+    </div>
+	
+	
+    <div class="main-right">
+        <div class="border-container">
+            <div class="name-title">
+                ===
+            </div>
+           <table class="table table-kingdargen">
+               <thead>
+                   <tr>
+                       <th>test1</th>
+                       <th>test2</th>
+                       <th>test3</th>
+                       <th>test4</th>
+                       <th>test5</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td>a</td>
+                       <td>268</td>
+                       <td>212</td>
+                       <td>342</td>
+                       <td>256</td>
+                   </tr>
+                   <tr>
+                       <td>b</td>
+                       <td>268</td>
+                       <td>212</td>
+                       <td>342</td>
+                       <td>256</td>
+                   </tr>
+                   <tr>
+                       <td>c</td>
+                       <td>268</td>
+                       <td>212</td>
+                       <td>342</td>
+                       <td>256</td>
+                   </tr>
+                   <tr>
+                       <td>d</td>
+                       <td>268</td>
+                       <td>212</td>
+                       <td>342</td>
+                       <td>256</td>
+                   </tr>
+                   <tr>
+                       <td>e</td>
+                       <td>268</td>
+                       <td>212</td>
+                       <td>342</td>
+                       <td>256</td>
+                   </tr>
+                   <tr>
+                       <td>f</td>
+                       <td>268</td>
+                       <td>212</td>
+                       <td>342</td>
+                       <td>256</td>
+                   </tr>
+                   <tr>
+                       <td>g</td>
+                       <td>268</td>
+                       <td>212</td>
+                       <td>342</td>
+                       <td>256</td>
+                   </tr>
+                   <tr>
+                       <td>h</td>
+                       <td>268</td>
+                       <td>212</td>
+                       <td>342</td>
+                       <td>256</td>
+                   </tr>
+                   <tr>
+                       <td>i</td>
+                       <td>268</td>
+                       <td>212</td>
+                       <td>342</td>
+                       <td>256</td>
+                   </tr>
+                   <tr>
+                       <td>k</td>
+                       <td>268</td>
+                       <td>212</td>
+                       <td>342</td>
+                       <td>256</td>
+                   </tr>
+                   <tr>
+                       <td>k</td>
+                       <td>268</td>
+                       <td>212</td>
+                       <td>342</td>
+                       <td>256</td>
+                   </tr>
+                   <tr>
+                       <td>k</td>
+                       <td>268</td>
+                       <td>212</td>
+                       <td>342</td>
+                       <td>256</td>
+                   </tr>
+                   <tr>
+                       <td>k</td>
+                       <td>268</td>
+                       <td>212</td>
+                       <td>342</td>
+                       <td>256</td>
+                   </tr>
+               </tbody>
+           </table>
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>
+       
+	    <div class="border-container">
+            <div class="name-title">
+             	===
+            </div>
+          <div id="juniorservice" _echarts_instance_="ec_1554971478860" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;">
+			  <div style="position: relative; overflow: hidden; width: 366px; height: 190px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+				  <canvas data-zr-dom-id="zr_0" width="457" height="237" style="position: absolute; left: 0px; top: 0px; width: 366px; height: 190px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;">
+				  </canvas>
+			  </div>
+			  <div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px/21px &quot;Microsoft YaHei&quot;; padding: 5px; left: 134px; top: 58px; pointer-events: none;">
+				  a<br>
+				  <span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#eaff00;">
+				  </span>
+				  test1: 320<br>
+				  <span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:#22ac38;">
+				  </span>
+				  test2: 120
+			  </div>
+		  </div>
+		  
+            <span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+        </div>
+		
+	
+		
+    </div>
+	
+<!--主体-->	
+</div>
+
+	
+</body>
+
+
+</html>
+
+

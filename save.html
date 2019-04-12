@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+	<html style="height: 100%">
+    <head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./bootstrap.css">
+	<link rel="stylesheet" href="./index.css">
+    </head>
+    <body style="height: 100%; margin: 0">
+	
+	<div class="header">
+    EPC Sence Information
+    <a href="javascript:;" class="a-access">
+        <button class="button type1">
+    		刷新
+    	</button>
+    </a>
+	</div>
+	
+	<div id="main" style="width: 500px;height:300px;"></div>
+	<script type="text/javascript" src="./echarts.min.js"></script>
+		<script type="text/javascript" src="./dark.js"></script>
+		<script type="text/javascript">   
+		var myChart = echarts.init(document.getElementById('main'));
+		var app = {};
+		option = null;
+		app.title = '世界人口总量 - 条形图';
+        var data;
+		function getJson(msg){
+            data = msg
+            option = {
+                yAxis: {
+                    type: 'category',
+                    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri','Sat' ,'Sun']
+                },
+                xAxis: {
+                    type: 'value'
+                },
+                series: [{
+				data: data, //传入data
+                type: 'bar',
+				itemStyle: {
+                    normal:{  
+                    color: function (params){
+                        var colorList = ['#ff4844','#9ac3e5','#66ac52','#ffc032','#549bd3','#f47e39','#549b53'];
+                        return colorList[params.dataIndex];
+                    }
+                },
+              },
+
+			}]
+          };
+	
+		
+		if (option && typeof option === "object") {
+			myChart.setOption(option, true);
+		}  
+	}
+
+
+       </script>
+   </body>
+</html>

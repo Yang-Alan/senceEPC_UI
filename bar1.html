@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+	<html style="height: 100%">
+    <head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./bootstrap.css">
+	<link rel="stylesheet" href="./index.css">
+	<script type="text/javascript" src="./echarts.min.js"></script>
+    </head>
+    <body style="height: 100%; margin: 0">
+	
+	<div class="header">
+    EPC Sence Information
+    <a href="javascript:;" class="a-access">
+        <button class="button type1">
+    		刷新
+    	</button>
+    </a>
+	</div>
+<div class="main clearfix">
+	<div class="main-left">
+	<div class="border-container">
+	<div id="main" style="width: 480px;height:300px;">
+		
+		<script type="text/javascript">   
+		var bar1 = echarts.init(document.getElementById('main'),'dark');
+        var data1;
+		function getJson1(msg){
+            data1 = msg
+            option = {
+                yAxis: {
+                    type: 'category',
+                    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri','Sat' ,'Sun']
+                },
+                xAxis: {
+                    type: 'value'
+                },
+                series: [{
+				data: data1, //传入data
+                type: 'bar',
+				itemStyle: {
+                    normal:{  
+                    color: function (params){
+                        var colorList = ['#ff4844','#9ac3e5','#66ac52','#ffc032','#549bd3','#f47e39','#549b53'];
+                        return colorList[params.dataIndex];
+                    }
+                },
+              },
+
+			}]
+          };
+	
+		
+		if (option && typeof option === "object") {
+			bar1.setOption(option, true);
+		}  
+	}
+       </script>
+	   
+	 </div>
+	 
+     <ul class="three-pie clearfix">
+        <div id="main1" style="width: 480px;height:300px;">
+		
+		<script type="text/javascript">   
+		var bar2 = echarts.init(document.getElementById('main1'),'dark');
+        var data2;
+		function getJson2(msg){
+            data2 = msg
+            option = {
+                yAxis: {
+                    type: 'category',
+                    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri','Sat' ,'Sun']
+                },
+                xAxis: {
+                    type: 'value'
+                },
+                series: [{
+				data: data2, //传入data
+                type: 'bar',
+				itemStyle: {
+                    normal:{  
+                    color: function (params){
+                        var colorList = ['#ff4844','#9ac3e5','#66ac52','#ffc032','#549bd3','#f47e39','#549b53'];
+                        return colorList[params.dataIndex];
+                    }
+                },
+              },
+
+			}]
+          };
+	
+		
+		if (option && typeof option === "object") {
+			bar2.setOption(option, true);
+		}  
+	}
+       </script>
+                	    
+	  </ul>
+			<span class="top-left border-span"></span>
+            <span class="top-right border-span"></span>
+            <span class="bottom-left border-span"></span>
+            <span class="bottom-right border-span"></span>
+	 </div>  
+	 
+	 </div>
+	 
+</div>	 
+   </body>
+</html>
