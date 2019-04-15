@@ -2,6 +2,7 @@ import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtWebEngineWidgets import QWebEngineView
+from PyQt5.QtGui import QIcon
 import random
 import threading
 import time
@@ -14,6 +15,7 @@ class MainWindow(QMainWindow):
     def __init__(self, *args,**kwargs):
         super().__init__(*args, **kwargs)
         self.setWindowTitle('senceEPC')
+        self.setWindowIcon(QIcon("./image/logoko.png"))
         self.showMaximized()
         global timer
         timer = threading.Timer(1, self.fun_timer)  # 首次启动
@@ -22,7 +24,7 @@ class MainWindow(QMainWindow):
         #####放入WebEngineView
         self.webview = WebEngineView()
         self.setCentralWidget(self.webview)
-        self.webview.load(QUrl("file:///C:/Users/Alan/Desktop/python/UI/bar1.html"))
+        self.webview.load(QUrl("file:///./bar1.html"))
 
         #####web页面加载完毕，调用函数
 
@@ -32,38 +34,70 @@ class MainWindow(QMainWindow):
     def run_js(self):
         self.data1 = self.generateData()
         self.data2 = self.generateData()
+        self.data3 = self.generateData()
+        self.data4 = self.generateData()
         self.jscode1 = "getJson1({})".format(self.data1)
         self.jscode2 = "getJson2({})".format(self.data2)
+        self.jscode3 = "getJson3({})".format(self.data3)
+        self.jscode4 = "getJson4({})".format(self.data4)
         self.webview.page().runJavaScript(self.jscode1)
         self.webview.page().runJavaScript(self.jscode2)
+        self.webview.page().runJavaScript(self.jscode3)
+        self.webview.page().runJavaScript(self.jscode4)
 
     def generateData(self):
         return [{
-            "name": "Mon",
+            "name": "1",
             "value": random.randint(0, 99)
         }, {
-            "name": "Tue",
+            "name": "2",
             "value": random.randint(0, 99)
         }, {
-            "name": "Wed",
+            "name": "3",
             "value": random.randint(0, 99)
         }, {
-            "name": "Thu",
+            "name": "4",
             "value": random.randint(0, 99)
         }, {
-            "name": "Fri",
+            "name": "5",
             "value": random.randint(0, 99)
         }, {
-            "name": "Sat",
+            "name": "6",
             "value": random.randint(0, 99)
         }, {
-            "name": "Sun",
+            "name": "7",
             "value": random.randint(0, 99)
-        }]
+        },{
+            "name": "8",
+            "value": random.randint(0, 99)
+        }, {
+            "name": "9",
+            "value": random.randint(0, 99)
+        }, {
+            "name": "10",
+            "value": random.randint(0, 99)
+        }, {
+            "name": "11",
+            "value": random.randint(0, 99)
+        }, {
+            "name": "12",
+            "value": random.randint(0, 99)
+        }, {
+            "name": "13",
+            "value": random.randint(0, 99)
+        },{
+            "name": "14",
+            "value": random.randint(0, 99)
+        }, {
+            "name": "15",
+            "value": random.randint(0, 99)
+        },]
+
+
 
     def fun_timer(self):
         self.run_js()
-        timer = threading.Timer(1,self.fun_timer)  # 1秒调用一次函数
+        timer = threading.Timer(10,self.fun_timer)  # 1秒调用一次函数
         # 定时器构造函数主要有2个参数，第一个参数为时间，第二个参数为函数名
 
         timer.start()  # 启用定时器
