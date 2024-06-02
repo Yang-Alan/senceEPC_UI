@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-02T09:01:22.100Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="Rvhht3ddeUPicDWeuUtL" version="20.8.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-02T09:02:16.441Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="BbyRPf3KyiXxx9GhDTTG" version="20.8.5" type="github">
   <diagram id="nMY7_8F1BtrzsAjcgdW9" name="第 1 页">
     <mxGraphModel dx="875" dy="435" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -202,11 +202,11 @@
         <mxCell id="5yCmDJtd9Wti_51StDvj-52" value="部分" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=7;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="260" y="880" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="5yCmDJtd9Wti_51StDvj-53" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;strokeColor=default;strokeWidth=2;fontSize=7;fontColor=default;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="170" y="915" width="70" height="40" as="geometry" />
+        <mxCell id="5yCmDJtd9Wti_51StDvj-53" value="消费，转给其他人" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;strokeColor=default;strokeWidth=2;fontSize=7;fontColor=default;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="915" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="5yCmDJtd9Wti_51StDvj-54" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;strokeColor=default;strokeWidth=2;fontSize=7;fontColor=default;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="385" y="915" width="70" height="40" as="geometry" />
+        <mxCell id="5yCmDJtd9Wti_51StDvj-54" value="消费，转给其他人" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;strokeColor=default;strokeWidth=2;fontSize=7;fontColor=default;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="385" y="915" width="85" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
