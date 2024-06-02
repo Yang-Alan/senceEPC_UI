@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-02T08:31:16.750Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="IB8I9CKbiPd3IiS0EC-y" version="20.8.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-02T08:33:30.020Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="z8Qq_5P_nEEYzDMf_UeX" version="20.8.5" type="github">
   <diagram id="nMY7_8F1BtrzsAjcgdW9" name="第 1 页">
     <mxGraphModel dx="875" dy="435" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -108,6 +108,12 @@
             <mxPoint x="249.57999999999993" y="510" as="sourcePoint" />
             <mxPoint x="249.57999999999993" y="550" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="5yCmDJtd9Wti_51StDvj-2" value="&lt;b&gt;20+&lt;/b&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.oval_callout;strokeColor=default;fontSize=10;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="455" y="124" width="60" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="5yCmDJtd9Wti_51StDvj-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 7px;&quot;&gt;可同时服务多个受害人&lt;/font&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.oval_callout;strokeColor=default;fontSize=10;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="458" y="200" width="92" height="37" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
