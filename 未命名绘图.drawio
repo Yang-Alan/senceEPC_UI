@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-02T09:03:38.592Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="MWEZOUmcL69RF-4ZSuho" version="20.8.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-02T09:04:10.625Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="raopmerMdJICrMrPe7Ie" version="20.8.5" type="github">
   <diagram id="nMY7_8F1BtrzsAjcgdW9" name="第 1 页">
     <mxGraphModel dx="875" dy="435" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -210,6 +210,12 @@
         </mxCell>
         <mxCell id="5yCmDJtd9Wti_51StDvj-54" value="消费，转给其他人" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;strokeColor=default;strokeWidth=2;fontSize=7;fontColor=default;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="385" y="1035" width="85" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5yCmDJtd9Wti_51StDvj-60" value="人工难以统计" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=7;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="428" y="970" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5yCmDJtd9Wti_51StDvj-61" value="人工难以统计" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=7;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="180" y="970" width="70" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
